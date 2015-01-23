@@ -1,0 +1,16 @@
+==
+coordinate system
+lower left is 0,0
+
+==
+Turtle Direction Code
+0: right
+1: up
+2: left
+3: down
+
+==
+Map Cell Code
+ : empty
+T: target
+O: obstacle

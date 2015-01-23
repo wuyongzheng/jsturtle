@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Javascript Turtle</title>
+<script src="jsturtle.js"></script>
+<script>
+var WORLD_W = 15;
+var WORLD_H = 15;
+var CELLSIZE = 24;
+var MAPDATA =
+"               " +
+"               " +
+"               " +
+"               " +
+"               " +
+"               " +
+"               " +
+"     T  T      " +
+"               " +
+"               " +
+"               " +
+"  T            " +
+"               " +
+"               " +
+"               ";
+var TUTINIT_X = 0;
+var TUTINIT_Y = 0;
+var TUTINIT_D = 1;
+</script>
+</head>
+<body onload="onbodyload()">
+<table id="tableid">
+</table>
+<textarea id="progta" height="10">
+</textarea>
+<button onclick="onrun()">run</button>
+<button onclick="onstop()">stop</button>
+<p id="logid"></p>
+</body>
