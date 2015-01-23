@@ -6,6 +6,7 @@
 var WORLD_W = 15;
 var WORLD_H = 15;
 var CELLSIZE = 24;
+var STACKSIZE = 5;
 var MAPDATA =
 "               " +
 "               " +
@@ -18,8 +19,8 @@ var MAPDATA =
 "               " +
 "               " +
 "               " +
-"  T            " +
-"               " +
+" OT            " +
+"  O            " +
 "               " +
 "               ";
 var TUTINIT_X = 0;
@@ -28,11 +29,12 @@ var TUTINIT_D = 1;
 </script>
 </head>
 <body onload="onbodyload()">
-<table id="tableid">
+<table id="tableid" border="1">
 </table>
-<textarea id="progta" height="10">
+<p id="stackid"></p>
+<textarea id="progta" cols="50" rows="10">
 </textarea>
-<button onclick="onrun()">run</button>
-<button onclick="onstop()">stop</button>
+<button onclick="onrun()" id="runid">run</button>
+<button onclick="onstop()" id="stopid" disabled="true">stop</button>
 <p id="logid"></p>
 </body>
